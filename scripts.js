@@ -1,5 +1,5 @@
 document.getElementById('fetchQuizData').addEventListener('click', function() {
-    fetch('http://localhost:8080/quiz/1')  // Replace with your API endpoint
+    fetch('https://${EC2_IP}/quiz/1')  // Replace with your API endpoint
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
